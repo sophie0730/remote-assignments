@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #cfcfcf;
+}
+
+.logo h1 {
+  margin: 0 0.5rem;
+  margin-top: 0.8rem;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.logo img {
+  width: 4vw;
+  height: 4vw;
+  justify-items: center;
+}
+
+nav {
+  flex: 1;
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-top: 1rem;
+}
+
+nav ul li {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.welcomeMessage {
+  z-index: -1;
+  position: relative;
+  min-height: 70vh;
+  background-image: url(../taipei.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeMessage h1 {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+}
+
+.information h2 {
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.infoBlock {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: stretch;
+}
+
+.block {
+  background-color: #4f4f4f;
+  color: #ffd306;
+  margin: 8px;
+  padding: 15px;
+  font-size: 2rem;
+}
+
+.block p {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  color: white;
+}
+
+.returnTop {
+  width: 120px;
+  height: 65px;
+  line-height: 65px;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  background-color: #84c1ff;
+  font-size: 1rem;
+}
+
+.button {
+  font-size: 1rem;
+  margin-top: auto;
+  align-self: flex-start;
+  color: #ffd306;
+}
+
+@media screen and (min-width: 1200px) {
+  .infoBlock {
+    width: 1200px;
+  }
+  .block {
+    flex: 1 0 400px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .logo {
+    flex-direction: column;
+  }
+  .logo img {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    padding-left: 2rem;
+  }
+}
