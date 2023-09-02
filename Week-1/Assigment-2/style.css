@@ -47,7 +47,7 @@ nav ul li {
   z-index: -1;
   position: relative;
   min-height: 70vh;
-  background-image: url(../taipei.jpg);
+  background-image: url(./taipei.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
