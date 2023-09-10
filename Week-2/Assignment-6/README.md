@@ -5,7 +5,7 @@ For educational purposes only, not for commercial use.
 
 ## Technologies
 
-Project is created with:
+The project is created with:
 
 - Language: HTML, CSS, JavaScript
 - Library: React.js v18.2.0
@@ -13,12 +13,12 @@ Project is created with:
 
 ## Setup
 
-No need to setup you environment. The website can be accessed directly via https://sophie0730.github.io/remote-assignments/Week-2/Assignment-6/.
+No need to set up your environment. The website can be accessed directly via https://sophie0730.github.io/remote-assignments/Week-2/Assignment-6/.
 
 ## Function
 
 - Dropdown list: Set dropdown lists.
-- Hover: The color of buttons will be changed when your mouse hover on it.
+- Hover: The color of the buttons will be changed when your mouse hovers over it.
 - RWD: The website can be viewed on smartphones.
 - Video: Make the video play automatically on the web page.
 
