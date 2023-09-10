@@ -1,0 +1,797 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 0 10px 6px -7px #777;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  width: 100%;
+  height: 7vh;
+}
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 7vh;
+}
+
+.logo img {
+  width: 30vh;
+  height: auto;
+  margin-left: 2vh;
+}
+
+.logo a {
+  font-size: 16px;
+}
+
+.msg {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.msgLeft {
+  align-items: center;
+  margin-right: 5vh;
+  padding-left: 1rem;
+}
+
+.msgLeft h3 {
+  font-size: 70px;
+  margin-bottom: 1px;
+}
+
+.msgLeft p {
+  font-size: 25px;
+}
+
+.msgRight {
+  align-items: center;
+  padding-top: 30px;
+}
+
+.video video {
+  width: 80vh;
+  height: "auto";
+}
+
+.items button {
+  display: inline-flex;
+  flex-direction: wrap;
+  border: black solid 1.5px;
+  background-color: white;
+  padding: 8px 25px;
+  border-radius: 5px;
+  margin: 5px 5px 5px 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.items a {
+  color: #1434a4;
+  text-decoration: none;
+}
+
+.items button:hover {
+  background-color: #becbd3;
+}
+
+.itemText {
+  font-size: 3vh;
+  margin: 3vh 0;
+  margin-left: 1vh;
+}
+
+.items {
+  display: inline;
+}
+
+.itemButton {
+  color: #1434a4;
+  text-decoration: none;
+}
+
+.interestClass {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: #d2d2d0;
+  height: 50vh;
+}
+
+.interestText {
+  font-size: 20px;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+.smallBtns {
+  padding-left: 10px;
+}
+
+.smallBtn {
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.productItem {
+  padding: 8px;
+  margin: 8px;
+  border: grey solid 0.5px;
+  border-radius: 10px;
+  text-align: center;
+  width: 20vw;
+}
+
+.productItem img {
+  width: 9vh;
+}
+
+.productTitle {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.productButton {
+  margin: 35px 0;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #1434a4;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.androidFunction {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgb(241, 243, 244);
+}
+
+.androidLeft img {
+  width: 45vw;
+}
+
+.androidRight {
+  margin-left: 20px;
+}
+
+.androidRight h3 {
+  font-size: 45px;
+}
+
+.androidRight button {
+  width: 100px;
+  line-height: 30px;
+  background-color: #1434a4;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.event {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.event .eventRightR {
+  order: 2;
+}
+.event .eventLeftR {
+  order: 1;
+}
+
+.eventLeft img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.eventRightR img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.eventLeft {
+  width: 50%;
+}
+
+.eventRight {
+  width: 50%;
+  margin: auto;
+  margin-left: 20px;
+}
+
+.eventLeftR {
+  width: 50%;
+  margin: auto;
+  margin-left: 20px;
+}
+
+.eventRightR {
+  width: 50%;
+  margin: auto;
+  margin-left: 20px;
+}
+.event h3 {
+  font-size: 40px;
+}
+
+.event p {
+  font-size: 20px;
+}
+
+.event button {
+  margin-top: 15px;
+  width: 100px;
+  line-height: 30px;
+  color: #1434a4;
+  background-color: white;
+  border-radius: 10px;
+  border: grey solid 2px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.event button:hover {
+  background-color: #becbd3;
+}
+
+.followers {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  padding: 0 30px;
+  margin-bottom: 4rem;
+}
+
+.follower {
+  padding: 8px;
+  margin: 8px;
+  border: grey solid 0.5px;
+  border-radius: 10px;
+  width: 30vw;
+}
+
+.follower img {
+  width: 5vw;
+}
+
+.followerTitle {
+  text-align: center;
+}
+.followerTitle h2 {
+  font-size: 5vh;
+}
+
+.lists {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  padding: 0 2rem;
+  height: 21rem;
+}
+.list {
+  margin: 0 2rem 2rem 2rem;
+  width: 66%;
+}
+.list ul {
+  padding-left: 0;
+}
+
+.list p {
+  font-size: 1rem;
+}
+.list ul li {
+  list-style-type: none;
+  padding: 0.6rem 0.6rem 0.6rem 0;
+  font-size: 0.9rem;
+}
+
+.list ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.list ul li a:hover {
+  color: grey;
+}
+
+.BottomBar {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0.5vh;
+}
+
+.BottomBar img {
+  width: 30vh;
+  vertical-align: none;
+}
+
+.ButtomList ul li {
+  text-align: center;
+  list-style-type: none;
+  display: inline-flex;
+  margin: 1rem;
+}
+
+.ButtomList ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.ButtomList ul li a:hover {
+  color: blue;
+}
+
+.footer {
+  display: flex;
+  flex-direction: wrap;
+  padding-left: 2rem;
+}
+
+.privacy {
+  flex: 4;
+}
+.newspaper {
+  justify-content: flex-end;
+  flex: 2;
+}
+
+.newspaper p {
+  display: inline-flex;
+  padding-right: 1rem;
+}
+
+.newspaper button {
+  color: white;
+  background-color: #1434a4;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 15px;
+  width: 5rem;
+}
+
+@media screen and (min-width: 1550px) and (max-width: 2000px) {
+  .event {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    padding-left: 150px;
+    flex-grow: 1;
+  }
+  .privacy {
+    flex: 7;
+  }
+  .newspaper {
+    justify-content: flex-end;
+    flex: 2;
+  }
+}
+
+/* Navbar container */
+.navbar {
+  margin-left: 2rem;
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial;
+  width: 80%;
+  height: 7vh;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  height: 7vh;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  height: 100%;
+  outline: none;
+  color: black;
+  padding: 2.5vh 16px;
+  background-color: white;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a {
+  padding: 2.5vh 16px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:hover {
+  border-bottom: #1434a4 solid 2px;
+}
+
+@media screen and (min-width: 1294px) {
+  .followers {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    padding: 0 120px;
+  }
+}
+
+.searchBar {
+  border: rgb(241, 243, 244) solid 1px;
+  border-radius: 5px;
+  height: 5vh;
+  padding-left: 1vh;
+  margin-top: 1vh;
+  margin-left: 3vh;
+  float: left;
+  display: flex;
+  background-color: rgb(241, 243, 244);
+}
+
+.dropdown-language {
+  float: right;
+  overflow: hidden;
+  margin-right: 1rem;
+  margin-top: 1.5vh;
+}
+
+.dropdown-language .language-btn {
+  font-size: 1.5vh;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1vh 16px;
+  background-color: #1434a4;
+  height: 4vh;
+  text-align: center;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.language-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.language-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-language:hover .language-content {
+  display: block;
+}
+
+.language-content a:hover {
+  background-color: #ddd;
+}
+
+hr {
+  border: rgb(225, 227, 228) solid 1px;
+  position: relative;
+}
+
+.slideItem {
+  display: flex;
+  flex-direction: wrap;
+  border: grey solid 1px;
+  border-radius: 15px;
+  margin: 9vh;
+  height: 65vh;
+}
+.slideItem-left {
+  width: 43%;
+  padding-left: 9vh;
+}
+
+.slideItem-left h3 {
+  font-size: 6vh;
+  margin-top: 1vh;
+}
+
+.slideItem-left p {
+  font-size: 2vh;
+}
+
+.slideItem-left p:first-child {
+  font-size: 2vh;
+  margin-top: 5vh;
+}
+.slideItem-right {
+  width: 57%;
+  padding-top: 11vh;
+  padding-left: 4vh;
+}
+.slideItem-right img {
+  width: 35v;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.slideItem-left button {
+  font-size: 1.1vw;
+  background-color: #1434a4;
+  color: white;
+  width: 10vh;
+  height: 4vh;
+  border-radius: 10px;
+  margin-top: 2vh;
+}
+
+@media screen and (min-width: 1500px) {
+  .slideItem {
+    width: 1600px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 3vw;
+  }
+
+  .slideItem-left {
+    padding-top: 50px;
+  }
+  .slideItem-left h3 {
+    font-size: 50px;
+  }
+
+  .slideItem-left p {
+    font-size: 25px;
+  }
+
+  .slideItem-left button {
+    font-size: 18px;
+    width: 100px;
+    height: 60px;
+  }
+
+  .slideItem-right img {
+    width: 800px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 920px) {
+  .dropdown-language {
+    display: none;
+  }
+  .lists {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .list {
+    margin: 0;
+  }
+
+  .list p {
+    margin: 1vh 0 0.3vh 0;
+    padding: 0;
+  }
+  .list ul {
+    margin: 1vh 0;
+  }
+  .list ul li {
+    padding: 0.5vh 0;
+  }
+  .ButtomList ul {
+    padding-left: 1vh;
+  }
+  .ButtomList ul li {
+    display: flex;
+  }
+  .footer {
+    flex-direction: column;
+    font-size: 2vh;
+    padding-left: 3vh;
+  }
+
+  .newspaper button {
+    font-size: 1.5vh;
+    width: 7vh;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .dropdown .more {
+    display: none;
+  }
+  .msg {
+    flex-direction: column;
+  }
+
+  .msgRight {
+    flex-direction: column;
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .msgLeft {
+    width: 80%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  #event {
+    display: none;
+  }
+  .androidFunction {
+    flex-direction: column;
+  }
+  .androidLeft img {
+    width: 90%;
+  }
+
+  .androidRight {
+    margin: 1vh;
+  }
+  .androidRight h3 {
+    margin: 1vh 0;
+  }
+
+  .event {
+    flex-direction: column;
+  }
+
+  .eventLeft img {
+    width: 170%;
+  }
+  .eventRight {
+    width: 90%;
+    margin: 0;
+  }
+  .eventRight h3 {
+    margin: 1vh 0;
+  }
+  .eventRight button {
+    margin-top: 0.5vh;
+  }
+
+  .event .eventRightR {
+    order: 1;
+  }
+  .event .eventLeftR {
+    order: 2;
+  }
+  .eventRightR {
+    margin: 0;
+  }
+  .eventRightR img {
+    width: 170%;
+  }
+
+  .eventLeftR {
+    width: 90%;
+    margin: 0;
+  }
+  .eventLeftR h3 {
+    margin: 1vh 0;
+  }
+  .eventLeftR button {
+    margin-top: 0.5vh;
+  }
+
+  .video video {
+    width: 50vh;
+  }
+
+  .searchBar {
+    width: 10vh;
+    margin: 1vh 0;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  #solution {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .productItem {
+    width: 70%;
+  }
+
+  .followers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .follower {
+    width: 80%;
+  }
+
+  .follower img {
+    width: 5vh;
+  }
+}
+@media screen and (max-width: 604px) {
+  .dropdown .product {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .video video {
+    display: none;
+  }
+}
