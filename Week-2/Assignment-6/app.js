@@ -302,7 +302,7 @@ function Msg() {
       </div>
       <div className="msgRight">
         <div className="video">
-          <video src="./build-smarter.mp4" autoPlay="autoplay" loop></video>
+          <video autoPlay muted loop src="./build-smarter.mp4"></video>
           <div className="items">
             <div className="itemText">我建立的應用程式：</div>
             <button>
