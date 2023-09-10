@@ -44,7 +44,6 @@ nav ul li {
 }
 
 .welcomeMessage {
-  z-index: -1;
   position: relative;
   min-height: 70vh;
   background-image: url(./taipei.jpg);
@@ -59,6 +58,7 @@ nav ul li {
   font-size: 6rem;
   color: white;
   text-align: center;
+  z-index: 10;
 }
 
 .information h2 {
@@ -87,11 +87,18 @@ nav ul li {
   color: white;
 }
 
-.returnTop {
+.hiddenBlock {
+  display: none;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: stretch;
+}
+
+.moreInfo {
   width: 120px;
   height: 65px;
   line-height: 65px;
-  margin-top: 10rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   background-color: #84c1ff;
   font-size: 1rem;
@@ -110,6 +117,9 @@ nav ul li {
   }
   .block {
     flex: 1 0 400px;
+  }
+  .hiddenBlock {
+    width: 1200px;
   }
 }
 
