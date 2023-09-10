@@ -178,7 +178,7 @@ const productItems = [
     id: "7",
   },
   {
-    picture: "./img/angular.png",
+    picture: "./img/Angular.png",
     name: "Angular",
     text: "因應未來趨勢的網路開發架構。",
     id: "8",
@@ -302,7 +302,7 @@ function Msg() {
       </div>
       <div className="msgRight">
         <div className="video">
-          <video src="./build-smarter.mp4" autoPlay loop></video>
+          <video src="./build-smarter.mp4" autoPlay="autoplay" loop></video>
           <div className="items">
             <div className="itemText">我建立的應用程式：</div>
             <button>
