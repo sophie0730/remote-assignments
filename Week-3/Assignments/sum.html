@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of the numbers</title>
+    <script>
+      let xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log(
+            xhr.responseText +
+              "(Get the result form the server; request to http://localhost:3000/data?number=10)"
+          ); //向http://localhost:3000/data?number=10提出request後，server的回覆log在console裡
+        }
+      };
+      xhr.open("GET", `http://localhost:3000/data?number=10`);
+      xhr.send();
+
+      function sendRequest() {
+        let userInput = document.getElementById("userInput").value;
+
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            let sum = 0;
+            let input_num = Number(userInput);
+            for (let i = input_num; i >= 1; i--) {
+              sum += i;
+            }
+
+            if (userInput !== "") {
+              document.querySelector(".result").style.display = "contents";
+              document.querySelector(
+                ".result"
+              ).innerHTML = `<h2>The sum of the numbers is ${sum}.</h2>`;
+            } else {
+              document.querySelector(".result").style.display = "none"; //沒輸入數字，或輸入空值，result就不出現
+            }
+          }
+        };
+        xhr.open("GET", `http://localhost:3000/sum.html`);
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body>
+    <header><h2>Sum of the numbers</h2></header>
+    <main>
+      <form action="/sum.html" method="GET" id="myForm">
+        <p>Please enter a number:</p>
+        <input name="number" type="number" id="userInput" />
+        <button type="button" onclick="sendRequest()">Submit</button>
+      </form>
+      <div class="result"></div>
+    </main>
+  </body>
+</html>

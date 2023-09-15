@@ -1,0 +1,8 @@
+extends layout 
+
+block content 
+    h1 Hi!
+    form(action='/trackName', method='GET')
+        label(for='trackName') Please enter your name: 
+        input(type='text', name='name')
+        button(type='submit') Submit

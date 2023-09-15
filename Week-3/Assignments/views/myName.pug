@@ -1,0 +1,8 @@
+extends layout 
+
+block content
+  h1 #{name} , Done!
+  form(action='/myName', method='GET')
+    //- label(for='clear') Enter 'q' to clear cookies and back to the previours page
+    //- input(type='text', name='clear')
+    button(type='submit' name='enter') Press the button to clear cookies and back to the previours page
