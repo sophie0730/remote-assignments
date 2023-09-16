@@ -26,10 +26,8 @@ app.get("/data", (req, res) => {
     res.send("Lack Parameter");
   } else {
     if (!isNaN(parseInput) && Number.isInteger(parseInput) && parseInput > 0) {
-      let total = 0;
-      for (let i = parseInput; i >= 1; i--) {
-        total += i;
-      }
+      let inputNum = Number(userInput);
+      let total = ((1 + inputNum) * inputNum) / 2;
       res.send(`Your number is: ${total}`);
     } else {
       res.send("Wrong Parameter");
