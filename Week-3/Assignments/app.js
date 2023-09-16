@@ -20,19 +20,20 @@ app.get("/", (req, res) => {
 //Assignment-2
 app.get("/data", (req, res) => {
   const userInput = req.query.number;
+  const parseInput = Number(userInput);
+
   if (!userInput) {
     res.send("Lack Parameter");
-  }
-
-  const parseInput = Number(userInput);
-  if (!isNaN(parseInput) && Number.isInteger(parseInput) && parseInput > 0) {
-    let total = 0;
-    for (let i = parseInput; i >= 1; i--) {
-      total += i;
-    }
-    res.send(`Your number is: ${total}`);
   } else {
-    res.send("Wrong Parameter");
+    if (!isNaN(parseInput) && Number.isInteger(parseInput) && parseInput > 0) {
+      let total = 0;
+      for (let i = parseInput; i >= 1; i--) {
+        total += i;
+      }
+      res.send(`Your number is: ${total}`);
+    } else {
+      res.send("Wrong Parameter");
+    }
   }
 });
 
@@ -43,7 +44,6 @@ app.get("/myName", (req, res) => {
     if (req.query.enter === "") {
       res.clearCookie("name");
       res.redirect("/trackName");
-      res.render("myName", { name: req.cookies.name });
     } else {
       res.render("myName", { name: req.cookies.name });
     }
@@ -56,8 +56,9 @@ app.get("/trackName", (req, res) => {
   if (req.query.name) {
     res.cookie("name", req.query.name);
     res.redirect("/myName");
+  } else {
+    res.render("trackName");
   }
-  res.render("trackName");
 });
 
 app.listen(port, () => {
