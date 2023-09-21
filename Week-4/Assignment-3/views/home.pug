@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+    title Login
+    link(href="/style.css" rel="stylesheet" type="text/css")
+
+  body
+    h1(class="head") Login: Sign in or sign up for a new account!
+ 
+    div(class="form")
+      div(class="sign")
+        h2 Sign Up
+        p Enter your email and password to sign up for an account.
+        form(action="/home" method="post")
+          div(class="newEmail entry")
+            label Email:   
+            input(type="text" name='newEmail')
+          div(class="newPassword entry")
+            label Password:
+            input(type='password' name='newPassword')
+          div(class="btn-signUp entry")
+            button(type='submit' name="signUp") Sign up 
+        p(class="warning") #{warningUp}
+
+      div(class='sign')
+        h2 Sign In
+        p Enter your email and password to sign in your account.
+        form(action='/home' method='post')
+          div(class="email entry")
+            label Email:   
+            input(type="text" name='email')
+          div(class="password entry")
+            label password:
+            input(type='password' name='password')   
+          div(class="btn-signIn entry")
+            button(type='submit' name="signIn") Login
+        p(class="warning") #{warningIn}
+
+
+

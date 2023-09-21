@@ -1,0 +1,28 @@
+* {
+  background-color: blanchedalmond;
+  font-family: "Trebuchet MS";
+}
+
+.form {
+  display: flex;
+  flex-direction: wrap;
+  margin: 5px 10px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.sign {
+  margin: 0 20px;
+  border: black solid 1px;
+  border-radius: 20px;
+  width: 300vw;
+  padding: 15px;
+}
+
+.warning {
+  color: red;
+}
+
+.entry {
+  margin-bottom: 8px;
+}

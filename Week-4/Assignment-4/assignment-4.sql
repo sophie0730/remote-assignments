@@ -1,0 +1,5 @@
+SELECT author_email FROM article;
+
+SELECT * FROM article
+WHERE ID BETWEEN 7 AND 12
+ORDER BY ID ASC;

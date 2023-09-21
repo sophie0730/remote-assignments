@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script>
+      function ajax(src, callback) {
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            callback(xhr.responseText);
+          }
+        };
+
+        xhr.open("GET", src);
+        xhr.send();
+      }
+
+      function render(data) {
+        let text = "";
+        const dataParse = JSON.parse(data);
+        const newDiv = document.createElement("div");
+        newDiv.className = "mainDiv";
+        for (let i = 0; i < dataParse.length; i++) {
+          text += `<div class="product">
+        <h3>${dataParse[i].name}</h3>
+        <h4>Price: ${dataParse[i].price}</h4>
+        <p>${dataParse[i].description}</p>
+        </div>
+        `;
+        }
+        newDiv.innerHTML = text;
+        document.body.appendChild(newDiv);
+      }
+
+      ajax(
+        "https://remote-assignment.s3.ap-northeast-1.amazonaws.com/products",
+        function (response) {
+          render(response);
+        }
+      );
+    </script>
+  </head>
+  <body>
+    <main></main>
+  </body>
+</html>

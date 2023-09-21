@@ -1,0 +1,16 @@
+* {
+  background-color: antiquewhite;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+}
+.product {
+  border: grey solid 2px;
+  border-radius: 9px;
+  margin: 30px;
+  width: 800px;
+  text-align: center;
+  align-items: center;
+}
