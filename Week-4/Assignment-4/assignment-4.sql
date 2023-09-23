@@ -1,5 +1,8 @@
-SELECT author_email FROM article;
+/*assignment4-1*/
+/*id is a primary key, as well as a foreign key*/
+SELECT a.id, a.title, b.email FROM article AS a
+LEFT JOIN user AS b ON a.id = b.id;
 
-SELECT * FROM article
-WHERE ID BETWEEN 7 AND 12
-ORDER BY ID ASC;
+
+/*assignment4-2*/
+SELECT * FROM article Limit 6,6;

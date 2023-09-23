@@ -14,10 +14,8 @@ async function fetchData(url) {
     insertData(
       resData.articles[i].title,
       resData.articles[i].content,
-      resData.articles[i].author,
-      resData.articles[i].author + "@gmail.com"
+      resData.articles[i].author
     );
-    console.log(resData.articles[i].title);
   }
 }
 
@@ -32,12 +30,12 @@ const pool = mysql
   })
   .promise();
 
-async function insertData(title, content, author, author_email) {
+async function insertData(title, content, author) {
   const [result] = await pool.query(
     `
-      INSERT INTO article (title, content, author, author_email)
-      VALUE(?, ?, ?, ?)
+      INSERT INTO article (title, content, author)
+      VALUE(?, ?, ?)
     `,
-    [title, content, author, author_email]
+    [title, content, author]
   );
 }

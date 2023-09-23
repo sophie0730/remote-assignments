@@ -3,24 +3,31 @@
   font-family: "Trebuchet MS";
 }
 
-.form {
-  display: flex;
-  flex-direction: wrap;
-  margin: 5px 10px;
-  justify-content: center;
-  padding: 0 10px;
+.btn {
+  border-radius: 10px;
+  margin: 20px 10px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: cadetblue;
 }
 
 .sign {
   margin: 0 20px;
   border: black solid 1px;
   border-radius: 20px;
-  width: 300vw;
+  width: 50vw;
   padding: 15px;
 }
 
 .warning {
   color: red;
+}
+
+.back {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .entry {

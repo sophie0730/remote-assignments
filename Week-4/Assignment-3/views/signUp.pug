@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    title Sign Up
+    link(href="/style.css" rel="stylesheet" type="text/css")
+
+  body
+    h1 Sign up
+    div(class="sign")
+        p Enter your email and password to sign up for an account.
+        form(action="/home/signUp" method="POST")
+            div(class="newEmail entry")
+                label Email:   
+                input(type="text" name='newEmail')
+            div(class="newPassword entry")
+                label Password:
+                input(type='password' name='newPassword')
+                div(class="btn-signUp entry")
+                button(type='submit' name="signUp") Sign up 
+        p(class="warning") #{warningUp}

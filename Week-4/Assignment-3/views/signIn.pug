@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    title Sign In
+    link(href="/style.css" rel="stylesheet" type="text/css")
+
+  body
+    h1 Sign In
+    div(class='sign')
+        p Enter your email and password to sign in your account.
+        form(action="/home/signIn" method="POST")
+            div(class="email entry")
+                label Email:   
+                input(type="text" name='email')
+            div(class="password entry")
+                label Password:
+                input(type='password' name='password')
+                div(class="btn-signin entry")
+                button(type='submit' name="signIn") Sign in
+        p(class="warning") #{warningIn}
