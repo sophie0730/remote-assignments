@@ -25,9 +25,9 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int NOT NULL AUTO_INCREMENT,
   `email` varchar(255) NOT NULL,
-  `password` varchar(32) NOT NULL,
+  `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'AAA@gmail','000'),(2,'BBB@gmail','111'),(3,'CCC@gmail','222'),(4,'DDD@gmail','333'),(5,'EEE@gmail','444'),(6,'FFF@gmail','555'),(7,'GGG@gmail','666'),(8,'HHH@gmail','777'),(9,'III@gmail','888'),(10,'JJJ@gmail','999'),(11,'KKK@gmail','101010'),(12,'LLL@gmail','111111'),(13,'MMM@gmail','121212'),(14,'NNN@gmail','131313'),(15,'OOO@gmail','141414'),(16,'PPP@gmail','151515'),(17,'QQQ@gmail','161616'),(18,'RRR@gmail','171717'),(19,'SSS@gmail','181818'),(20,'TTT@gmail','191919'),(21,'UUU@gmail','202020'),(22,'VVV@gmail','212121'),(23,'WWW@gmail','222222'),(24,'XXX@gmail','232323'),(25,'YYY@gmail','242424'),(26,'ZZZ@gmail','252525'),(27,'aaa@gmail','000'),(28,'bbb@gmail','111'),(29,'ccc@gmail','222'),(30,'ddd@gmail','333');
+INSERT INTO `user` VALUES (1,'fewfewfewfew','$2b$10$eXiCBjtOiHyhJRAp.3aVjOAqaO/0Ibyze0pEwLxqXIQYanNLzT0NO'),(2,'zzz','$2b$10$ARXvvdrt4jUluX3Ja7T.bOH5TajRR9FvRttX.0gJSfXPK5dF97FQ6'),(3,'123','$2b$10$LgVX73yxK846GlNfsLYBVO8IzVZboI8BEYAoXhbiVCh/FETVZUFY.'),(4,'hu@gmail','$2b$10$v4laZhKDIB0mSELEFpk.9.0891NrDZGOmfMPzBSl/BwjSc..28J0W'),(5,'abc@gmail','$2b$10$/5jo1bSZngDC3g5Swb7NEOe1ERvtwrMnofqzQHt6Mkdyr8ZFOG3GW'),(6,'sss','$2b$10$yU40pel8FUOuf0A/tXC35uvE3H9YyI3F03W.pDdxoJrg/vMv3kfgm'),(7,'gre','$2b$10$vQ4hdg2IbB.RvOND5Nq4l.qSEz2cnGQeed9cKhtCmTaFHSVZHzYCS'),(8,'fe','$2b$10$h1SINrrwc8MPf3FSDBeNcur8dncAia6c94pGmFh3izCkJ/paRporS');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-09-23 18:56:53
+-- Dump completed on 2023-09-26  2:36:19
